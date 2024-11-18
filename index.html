@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Six-Digit Number Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #randomNumber {
+            font-size: 2em;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Random Six-Digit Number Generator</h1>
+    <button onclick="generateRandomNumber()">Generate Random Number</button>
+    <p id="randomNumber"></p>
+
+    <script>
+        function generateRandomNumber() {
+            // Generate a random number between 100000 and 999999
+            const randomNum = Math.floor(Math.random() * 900000) + 100000;
+            // Display the number on the page
+            document.getElementById('randomNumber').textContent = randomNum;
+        }
+    </script>
+
+</body>
+</html>
