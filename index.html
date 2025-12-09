@@ -11,15 +11,12 @@
         window.DD_RUM && window.DD_RUM.init({
             clientToken: 'pub8bb372e1ba2ad6ae59b56d085241d944',
             applicationId: 'b3425d8b-c939-444f-a2dc-277774a78c94',
-            // `site` refers to the Datadog site parameter of your organization
-            // see https://docs.datadoghq.com/getting_started/site/
             site: 'datadoghq.com',
             service: 'iframe-rum-sessions',
             env: "prod",
-            // Specify a version number to identify the deployed version of your application in Datadog
-            // version: '1.0.0',
-            //trackSessionAcrossSubdomains: true,
-            //usePartitionedCrossSiteSessionCookie: true,
+            version: '1.0.0',
+            trackSessionAcrossSubdomains: true,
+            usePartitionedCrossSiteSessionCookie: true,
             sessionSampleRate: 100,
             sessionReplaySampleRate: 100,
             trackUserInteractions: true,
